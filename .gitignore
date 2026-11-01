@@ -10,3 +10,6 @@ fp-info-cache
 *.lck
 ~*.lck
 .history/
+
+# JLCPCB plugin output (copied to hardware/fabrication)
+hardware/kicad_project_files/jlcpcb/

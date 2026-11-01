@@ -38,14 +38,14 @@ Instead of reusing the hobby RC radio from the [2026 robot](https://github.com/S
 | **Buttons** | 8 action buttons and a power button |
 | **Display** | I2C OLED (HS13L03W2C01), plus a status LED |
 | **Battery** | Single 18650 cell |
-| **Charging and power** | IP5306-I2C charger and 5 V boost, USB-C input with ESD protection |
+| **Charging and power** | IP5306-I2C charger and 5 V boost |
 | **Expansion** | 2 x 5 header for spare I/O |
 
 ## System Design
 
 ### Hardware
 
-Designed in KiCad 10 as a two-sheet schematic: the main sheet (USB-C input, ESP32-S3, inputs, display, and expansion header) and a separate Battery Charging & Protection sheet. All project files are in [`/hardware/kicad_project_files`](/hardware/kicad_project_files).
+Designed in KiCad 10 as a two-sheet schematic: the main sheet (ESP32-S3, inputs, display, and expansion header) and a separate Battery Charging & Protection sheet. All project files are in [`/hardware/kicad_project_files`](/hardware/kicad_project_files). Passives use 0805 packages and the board has exposed test pads, so it can be hand-soldered and assembled in-house to keep cost down.
 
 ### Software
 

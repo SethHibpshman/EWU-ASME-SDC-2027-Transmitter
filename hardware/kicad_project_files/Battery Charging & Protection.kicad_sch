@@ -4865,7 +4865,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:C_0603"
+		(property "Footprint" "PCM_JLCPCB:C_0805"
 			(at 35.052 62.23 90)
 			(hide yes)
 			(show_name no)
@@ -5156,7 +5156,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:C_0603"
+		(property "Footprint" "PCM_JLCPCB:C_0805"
 			(at 50.292 165.1 90)
 			(hide yes)
 			(show_name no)
@@ -5684,7 +5684,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "PCM_JLCPCB:R_0805"
 			(at 126.746 62.484 90)
 			(hide yes)
 			(show_name no)
@@ -6090,7 +6090,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:C_0603"
+		(property "Footprint" "PCM_JLCPCB:C_0805"
 			(at 23.622 72.39 90)
 			(hide yes)
 			(show_name no)
@@ -6595,7 +6595,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "PCM_JLCPCB:R_0805"
 			(at 177.546 75.184 90)
 			(hide yes)
 			(show_name no)
@@ -6946,7 +6946,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "PCM_JLCPCB:R_0805"
 			(at 143.764 111.506 90)
 			(hide yes)
 			(show_name no)
@@ -7544,7 +7544,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "PCM_JLCPCB:R_0805"
 			(at 26.416 62.484 90)
 			(hide yes)
 			(show_name no)
@@ -7758,7 +7758,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "PCM_JLCPCB:R_0805"
 			(at 152.146 106.426 90)
 			(hide yes)
 			(show_name no)
@@ -8186,7 +8186,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "PCM_JLCPCB:R_0805"
 			(at 58.166 66.294 90)
 			(hide yes)
 			(show_name no)
@@ -8321,7 +8321,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "PCM_JLCPCB:R_0805"
 			(at 131.064 81.534 90)
 			(hide yes)
 			(show_name no)
@@ -9040,7 +9040,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "PCM_JLCPCB:R_0805"
 			(at 68.326 66.294 90)
 			(hide yes)
 			(show_name no)
@@ -9547,7 +9547,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:C_0603"
+		(property "Footprint" "PCM_JLCPCB:C_0805"
 			(at 61.722 153.67 90)
 			(hide yes)
 			(show_name no)
@@ -10304,7 +10304,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "PCM_JLCPCB:R_0805"
 			(at 71.374 78.486 90)
 			(hide yes)
 			(show_name no)
@@ -10441,7 +10441,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "PCM_JLCPCB:R_0805"
 			(at 177.546 62.484 90)
 			(hide yes)
 			(show_name no)
@@ -10576,7 +10576,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "PCM_JLCPCB:R_0805"
 			(at 52.324 145.034 90)
 			(hide yes)
 			(show_name no)
@@ -10789,7 +10789,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "PCM_JLCPCB:R_0805"
 			(at 58.166 81.534 90)
 			(hide yes)
 			(show_name no)
