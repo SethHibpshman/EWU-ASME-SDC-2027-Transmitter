@@ -9835,7 +9835,7 @@
 				)
 			)
 		)
-		(property "Footprint" "jlc:IND-SMD_L5.0-W5.0"
+		(property "Footprint" "Inductor_SMD:L_Taiyo-Yuden_NR-50xx_HandSoldering"
 			(at 116.84 66.04 0)
 			(hide yes)
 			(show_name no)
