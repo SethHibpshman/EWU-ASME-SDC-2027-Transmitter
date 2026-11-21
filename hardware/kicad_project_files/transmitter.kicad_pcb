@@ -5638,18 +5638,6 @@
 			(layer "F.CrtYd")
 			(uuid "47c61024-f8f6-4c1f-a429-fed523b0742b")
 		)
-		(fp_text user "1"
-			(at -6.75 0.77 0)
-			(layer "F.SilkS")
-			(uuid "2dcf0b63-7623-4f16-b108-8087784b38e9")
-			(effects
-				(font
-					(size 2.03 2.03)
-					(thickness 0.2)
-				)
-				(justify left)
-			)
-		)
 		(fp_text user "${REFERENCE}"
 			(at 0 0 0)
 			(layer "F.Fab")

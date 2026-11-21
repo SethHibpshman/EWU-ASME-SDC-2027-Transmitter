@@ -6002,7 +6002,7 @@
 		)
 		(uuid "d945bcb3-2b6d-41e2-9dbd-dfbbbf127901")
 	)
-	(text_box "NOTES:\n- Leave R5 unpopulated till determined safe for GPIO\n\nTO-DO\n- look into what other dude did different"
+	(text_box "NOTES:\n- Leave R5 unpopulated till determined safe for GPIO"
 		(exclude_from_sim no)
 		(at 130.302 14.224 0)
 		(size 58.674 32.5731)
