@@ -1,0 +1,1 @@
+# runs first. Things like IP5306 setup (keep-on, KEY-off enable, charge current)
