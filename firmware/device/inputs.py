@@ -15,8 +15,12 @@ buttons = [Pin(p, Pin.IN, Pin.PULL_UP) for p in BUTTON_PINS]   # Assigning a Pin
 btn_vals = [0] * len(buttons)                                  # A list containing the value of each button
 
 # POTENTIOMETERS ########################
-pots = [ADC(Pin(p), atten=ADC.ATTN_11DB) for p in PIN_POTS]    # Setting up a ADC class for each pot and putting it in a list
+pots = [ADC(Pin(p), atten=ADC.ATTN_11DB) for p in PIN_POTS]    # Setting up an ADC class for each pot and putting it in a list
 pot_vals = [p.read_u16() for p in pots]                        # 0 to 65535
+
+# JOYSTICKS #############################
+joys = [ADC(Pin(p), atten=ADC.ATTN_11DB) for p in PIN_AXES]    # Setting up an ADC class for each joy and putting it in a list
+joy_vals = [p.read_u16() for p in joys]                        # 0 to 65535
 
 
 

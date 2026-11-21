@@ -43,6 +43,8 @@ def input_update():
         inputs.btn_vals[i] = btn.value()
     for i, pot in enumerate(inputs.pots):
         inputs.pot_vals[i] = pot.read_u16()
+    for i, joy in enumerate(inputs.joys):
+        inputs.joy_vals[i] = joy.read_u16()
 
 # Test code
 while True:
@@ -51,4 +53,5 @@ while True:
     input_update()
     #print(inputs.btn_vals)
     #print(inputs.pot_vals)
+    #print(inputs.joy_vals)
     oled.show()
