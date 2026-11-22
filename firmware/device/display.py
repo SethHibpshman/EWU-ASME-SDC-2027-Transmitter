@@ -1,8 +1,11 @@
 # OLED screen: link, battery, mode
 
-from config import OLED_W, OLED_H, i2c
+from machine import Pin
+from config import OLED_W, OLED_H, i2c, PIN_LED
 import ssd1306
 import gfx
+
+led = Pin(PIN_LED, Pin.OUT)
 
 oled     = ssd1306.SSD1306_I2C(OLED_W, OLED_H, i2c)
 oled_gfx = gfx.GFX(OLED_W, OLED_H, oled.pixel)

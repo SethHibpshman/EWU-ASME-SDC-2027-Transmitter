@@ -51,6 +51,7 @@ while True:
     sleep(1)
     draw_centered('Hello World!',64,10)
     input_update()
+    #display.led.value(1)
     #print(inputs.btn_vals)
     #print(inputs.pot_vals)
     #print(inputs.joy_vals)
