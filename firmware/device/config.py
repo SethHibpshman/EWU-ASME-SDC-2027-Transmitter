@@ -31,6 +31,8 @@ CHARGE_CURRENT_REG = 0x0A  # 0x24 bits 4:0, 0x0A = 1.05 A from USB
 
 # BATTERY ###############################
 PIN_BATT = 8               # Fuel gauge pin
+V_EMPTY = 3.2
+V_FULL = 4.2
 
 # ANALOG INPUTS (ADC1 only) #############
 # Order matters: lx, ly, rx, ry

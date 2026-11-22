@@ -37,6 +37,8 @@ import gfx
 import display
 from display import draw_centered, oled
 import inputs
+import power
+
 
 def input_update():
     for i, btn in enumerate(inputs.buttons):
@@ -45,6 +47,7 @@ def input_update():
         inputs.pot_vals[i] = pot.read_u16()
     for i, joy in enumerate(inputs.joys):
         inputs.joy_vals[i] = joy.read_u16()
+    power.fuel_val = power.fuel.read_u16()
 
 # Test code
 while True:
@@ -55,4 +58,5 @@ while True:
     #print(inputs.btn_vals)
     #print(inputs.pot_vals)
     #print(inputs.joy_vals)
+    print(f'Battery Voltage: {power.batt_voltage()} which is {power.batt_percent()}%.')
     oled.show()
