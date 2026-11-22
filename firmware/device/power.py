@@ -1,9 +1,17 @@
+"""
+power.py
+=========
+Power monitoring & management through the IP5306 chip and a fuel gauge.
+
+Author: Seth Hibpshman
+License: GNU GPL v3
+"""
 # IP5306 registers, battery voltage, soft power-off
 
 from machine import Pin, ADC
 from config import PIN_BATT, V_FULL, V_EMPTY
 
-# FUEL GAUGE ########################
+# FUEL GAUGE ############################
 fuel = ADC(Pin(PIN_BATT), atten=ADC.ATTN_11DB)   # Setting up an ADC class for each pot and putting it in a list
 fuel_val = fuel.read_u16()                       # 0 to 65535
 DIVIDER = 2.0                                    # (R1 + R2) / R2
@@ -17,9 +25,8 @@ def batt_percent():
     percent = (v - V_EMPTY) / (V_FULL - V_EMPTY) * 100
     return max(0, min(100, int(round(percent, 0))))
 
-
+# IP5306-I2C ############################
 # class IP5306:
 #     self.pin = Pin
-#
 #     def _read(self, reg):
 #         i2c.readfrom_mem(0x75, 0x00, 1)

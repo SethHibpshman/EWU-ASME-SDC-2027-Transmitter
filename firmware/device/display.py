@@ -1,4 +1,11 @@
-# OLED screen: link, battery, mode
+"""
+display.py
+=========
+Handling user feedback, including the OLED and the LED.
+
+Author: Seth Hibpshman
+License: GNU GPL v3
+"""
 
 from machine import Pin
 from config import OLED_W, OLED_H, i2c, PIN_LED

@@ -26,13 +26,12 @@ OLED_H = 64
 # IP5306-I2C ############################
 IP5306_ADDR = 0x75
 PIN_KEY_CTRL = 40          # Drives Q1, pulse high to "press" the power key
-PIN_IP5306_INT = None      # Set to 39 once R5 is fitted (INT voltage confirmed safe)
-CHARGE_CURRENT_REG = 0x0A  # 0x24 bits 4:0, 0x0A = 1.05 A from USB
+PIN_IP5306_INT = None      # Set to 39 once R5 is fitted (INT voltage needs to be confirmed safe)
 
 # BATTERY ###############################
 PIN_BATT = 8               # Fuel gauge pin
-V_EMPTY = 3.2
-V_FULL = 4.2
+V_EMPTY = 3.2              # Voltage considered empty
+V_FULL = 4.2               # Voltage considered full
 
 # ANALOG INPUTS (ADC1 only) #############
 # Order matters: lx, ly, rx, ry

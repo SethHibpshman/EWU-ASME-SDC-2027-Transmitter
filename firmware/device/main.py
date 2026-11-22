@@ -34,7 +34,6 @@ from time import sleep, ticks_ms, ticks_diff
 import config
 import ssd1306
 import gfx
-import display
 from display import draw_centered, oled
 import inputs
 import power
@@ -52,11 +51,12 @@ def input_update():
 # Test code
 while True:
     sleep(1)
-    draw_centered('Hello World!',64,10)
     input_update()
+    draw_centered('Hello World!',64,10)
+    oled.show()
+
     #display.led.value(1)
     #print(inputs.btn_vals)
     #print(inputs.pot_vals)
     #print(inputs.joy_vals)
-    print(f'Battery Voltage: {power.batt_voltage()} which is {power.batt_percent()}%.')
-    oled.show()
+    #print(f'Battery Voltage: {power.batt_voltage()} which is {power.batt_percent()}%.')
