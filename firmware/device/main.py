@@ -49,14 +49,20 @@ def input_update():
     power.fuel_val = power.fuel.read_u16()
 
 # Test code
-while True:
-    sleep(1)
-    input_update()
-    draw_centered('Hello World!',64,10)
-    oled.show()
+# while True:
+#     sleep(1)
+#     input_update()
+#     draw_centered('Hello World!',64,10)
+#     oled.show()
 
     #display.led.value(1)
     #print(inputs.btn_vals)
     #print(inputs.pot_vals)
     #print(inputs.joy_vals)
     #print(f'Battery Voltage: {power.batt_voltage()} which is {power.batt_percent()}%.')
+
+ip = power.IP5306()
+print(ip.read_reg(0x70))
+print(ip.is_charging())
+print(ip.is_full())
+print(ip.is_load_light())
