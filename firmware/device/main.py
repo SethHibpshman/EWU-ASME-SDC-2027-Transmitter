@@ -62,7 +62,4 @@ def input_update():
     #print(f'Battery Voltage: {power.batt_voltage()} which is {power.batt_percent()}%.')
 
 ip = power.IP5306()
-print(ip.read_reg(0x70))
-print(ip.is_charging())
-print(ip.is_full())
-print(ip.is_load_light())
+print(ip)

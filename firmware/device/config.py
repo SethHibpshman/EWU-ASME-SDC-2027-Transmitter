@@ -16,7 +16,7 @@ I2C_ID = 0
 PIN_SCL = 42
 PIN_SDA = 41
 I2C_FREQ = 400000
-i2c = I2C(scl=Pin(PIN_SCL), sda=Pin(PIN_SDA), freq=I2C_FREQ)
+i2c = I2C(I2C_ID, scl=Pin(PIN_SCL), sda=Pin(PIN_SDA), freq=I2C_FREQ)
 
 # OLED ##################################
 OLED_ADDR = 0x3C
