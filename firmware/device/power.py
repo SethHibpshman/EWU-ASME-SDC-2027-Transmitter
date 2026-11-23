@@ -59,6 +59,10 @@ FIELDS = OrderedDict((
     ("charging",          (0x70, 3, 1)),   # 1 = charging
     ("full",              (0x71, 3, 1)),   # 1 = fully charged
     ("light_load",        (0x72, 2, 1)),   # 1 = load is light
+    # Button flags (set 1 to clear)
+    ("short_pressed", (0x77, 0, 1)),  # 1 = short press happened
+    ("long_pressed", (0x77, 1, 1)),  # 1 = long press happened
+    ("double_pressed", (0x77, 2, 1)),  # 1 = double press happened
 ))
 
 READ_ONLY = ("charging", "full", "light_load")
@@ -185,3 +189,18 @@ class IP5306:
             self.key.value(0)         # release
             sleep_ms(150)
         return True
+
+    def button_event(self):
+        """Returns 'short', 'long', 'double' or None, and clears the flags."""
+        flags = self.read_reg(0x77)
+        if flags is None:
+            return None
+        if flags & 0b111:
+            self.write_reg(0x77, flags)   # write the set flags back as 1s to clear them
+        if flags & 0b100:
+            return "double"
+        if flags & 0b010:
+            return "long"
+        if flags & 0b001:
+            return "short"
+        return None

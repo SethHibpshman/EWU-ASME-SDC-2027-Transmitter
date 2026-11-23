@@ -50,13 +50,23 @@ def input_update():
 
 # INITIALIZATION ########################
 ip = power.IP5306()
+screens = ['batt', 'inputs']
+screen_idx = 0
 
 # TEST CODE BELOW #######################
 while True:
-    sleep(1)
+    # Short press on SW9 moves to the next screen
+    if ip.button_event() == "short":
+        screen_idx = (screen_idx + 1) % len(screens)
+
     display.oled.fill(0)
-    display.draw_battery_screen(ip)
+    if screens[screen_idx] == 'batt':
+        display.draw_battery_screen(ip)
+    elif screens[screen_idx] == 'inputs':
+        display.draw_inputs_screen()
     display.oled.show()
+
+    sleep(0.05)
 
     # input_update()
     # draw_centered('Hello World!',64,10)
