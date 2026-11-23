@@ -1,6 +1,7 @@
 # Port of Adafruit GFX Arduino library to MicroPython.
 # Based on: https://github.com/adafruit/Adafruit-GFX-Library
 # Author: Tony DiCola (original GFX author Phil Burgess)
+    # Forked changes: Seth Hibpshman
 # License: MIT License (https://opensource.org/licenses/MIT)
 
 
@@ -216,6 +217,7 @@ class GFX:
             if a > b:
                 a, b = b, a
             self.hline(a, y, b-a+1, *args, **kwargs)
+        y = last + 1
         sa = dx12 * (y - y1)
         sb = dx02 * (y - y0)
         while y <= y2:

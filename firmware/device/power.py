@@ -63,7 +63,6 @@ FIELDS = OrderedDict((
 
 READ_ONLY = ("charging", "full", "light_load")
 
-
 class IP5306:
     """Driver for the IP5306-I2C charger/boost chip on the shared I2C bus.
     Every read returns None, and every write returns False, if the chip is asleep."""

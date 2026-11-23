@@ -34,7 +34,7 @@ from time import sleep, ticks_ms, ticks_diff
 import config
 import ssd1306
 import gfx
-from display import draw_centered, oled
+import display
 import inputs
 import power
 
@@ -48,18 +48,21 @@ def input_update():
         inputs.joy_vals[i] = joy.read_u16()
     power.fuel_val = power.fuel.read_u16()
 
-# Test code
-# while True:
-#     sleep(1)
-#     input_update()
-#     draw_centered('Hello World!',64,10)
-#     oled.show()
-
-    #display.led.value(1)
-    #print(inputs.btn_vals)
-    #print(inputs.pot_vals)
-    #print(inputs.joy_vals)
-    #print(f'Battery Voltage: {power.batt_voltage()} which is {power.batt_percent()}%.')
-
+# INITIALIZATION ########################
 ip = power.IP5306()
-print(ip)
+
+# TEST CODE BELOW #######################
+while True:
+    sleep(1)
+    display.oled.fill(0)
+    display.draw_battery_screen(ip)
+    display.oled.show()
+
+    # input_update()
+    # draw_centered('Hello World!',64,10)
+    # display.led.value(1)
+    # print(inputs.btn_vals)
+    # print(inputs.pot_vals)
+    # print(inputs.joy_vals)
+    # print(f'Battery Voltage: {power.batt_voltage()} which is {power.batt_percent()}%.')
+    # print(ip)
